@@ -16,7 +16,7 @@ model = BlenderbotForConditionalGeneration.from_pretrained("facebook/blenderbot-
 utterance = "I want to order a Pizza"
 
 # Tokenize the utterance
-inputs = tokenizer(utterance, return_tensors="pt")
+inputs = tokenizer(utterance, return_tensors="pt") # pytorch tensor format
 inputs
 
 # Passing through the utterances to the Blenderbot model
